@@ -22,7 +22,7 @@ def load_dataset_and_model(num_classes):
     # Load the MASSIVE dataset from Amazon
     dataset = load_dataset(
         "AmazonScience/massive", "all_1.1",
-        cache_dir=dataset_cache
+        cache_dir=dataset_cache , trust_remote_code=True
     )
 
     return model, tokenizer, dataset
