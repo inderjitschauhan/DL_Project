@@ -3,7 +3,7 @@ import torch
 from transformers import Trainer, TrainingArguments, DataCollatorWithPadding
 from sklearn.model_selection import train_test_split
 from datasets import Dataset
-from utils.loader import load_dataset_and_model  # assumes this is correct
+from loader import load_dataset_and_model  # assumes this is correct
 
 def clear_terminal():
     os.system('cls' if os.name == 'nt' else 'clear')
