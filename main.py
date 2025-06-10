@@ -29,7 +29,7 @@ def main():
 
     #plot_intent_distribution(dataset, split_name="train")
     print_cache_paths()
-    train_and_save_model(model, tokenizer, dataset, num_classes, model_save_path)
+    #train_and_save_model(model, tokenizer, dataset, num_classes, model_save_path)
 
 if __name__ == "__main__":
     main()
