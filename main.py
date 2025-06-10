@@ -1,8 +1,8 @@
 import os
 
 # Set cache directories
-os.environ["HF_DATASETS_CACHE"] = "C:/Users/IISC/Documents/project_mBert/hf_datasets_cache"
-os.environ["HF_TRANSFORMERS_CACHE"] = "C:/Users/IISC/Documents/project_mBert/hf_models_cache"
+os.environ["HF_DATASETS_CACHE"] = "hf_datasets_cache"
+os.environ["HF_TRANSFORMERS_CACHE"] = "hf_models_cache"
 
 # Create directories if they don't exist
 os.makedirs(os.environ["HF_DATASETS_CACHE"], exist_ok=True)
@@ -14,10 +14,10 @@ os.makedirs(model_save_path, exist_ok=True)
 num_classes = 60
 
 # Import modules
-from utils.visualize import plot_intent_distribution
-from utils.loader import load_dataset_and_model
-from utils.printlogs import print_cache_paths
-from utils.train import train_and_save_model
+#from utils.visualize import plot_intent_distribution
+from loader import load_dataset_and_model
+#from utils.printlogs import print_cache_paths
+#from utils.train import train_and_save_model
 import numpy as np
 
 def main():
