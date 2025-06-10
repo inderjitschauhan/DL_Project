@@ -17,7 +17,7 @@ num_classes = 60
 #from utils.visualize import plot_intent_distribution
 from loader import load_dataset_and_model
 from printlogs import print_cache_paths
-#from utils.train import train_and_save_model
+from train import train_and_save_model
 import numpy as np
 
 def main():
